@@ -1,0 +1,3017 @@
+fileFormatVersion: 2
+guid: fc98424e5eae9ec4fadd75a373634237
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_0
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 590
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7fc220d2f47154790fc0c956fe8555
+      internalID: -1650965674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_1
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 590
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f748d461757d284985cffb8555a0906
+      internalID: -1101672288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_2
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 590
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a3300f9c8190747ad93046b90301c5
+      internalID: 160585063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_3
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 590
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24e7d1383d6cac448de3582b364f878
+      internalID: 17765093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_4
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 590
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceefd9301997c3b4ebc506a9513fa513
+      internalID: 97170910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_5
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 587
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b5a3e839a88bd40af8d425e218ea63
+      internalID: -2042474550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_6
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 561
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c24e89afd2d934ca079e26211ae709
+      internalID: 150473758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_7
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 561
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0e5bfba9aa6a34491b1981b7241f06
+      internalID: 1251968702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_8
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 561
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357ec3f4cc1f8bc4ba1cd0cfa779a2b6
+      internalID: -392791170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_9
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 561
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0913195312f283b44b9124d0d19a4668
+      internalID: 689950312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 482
+        width: 71
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12817503755bf7741a1861c22cc92382
+      internalID: 169795893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_11
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 484
+        width: 79
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984d58fe2cc90fe48aaf2f3e56e92e8d
+      internalID: -2062887710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_12
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 484
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c32918372a3944e92a33ed2c6d8528
+      internalID: 206358202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_13
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 484
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b568a5587dd197a49813b9bf0bbf57cc
+      internalID: 2022838557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_14
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 484
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6269ea4f12f431445bbaf87e7c84c5ee
+      internalID: -1318519303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_15
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 568
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa891da95e384b64385f85dede6261aa
+      internalID: -2128443307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_16
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 568
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ee0def22e66ea4cb6fdeabe910fa20
+      internalID: -407990610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_17
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 568
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c5b856618f796459b0d6f31810d9f6
+      internalID: -1026162199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_18
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 568
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6530d791b6fee94797b57f183160476
+      internalID: 1099381784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_19
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 568
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd619b72e9c3614f8964ba412b7e1ce
+      internalID: 1140269349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_20
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 568
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a372737eedb33254b8daa76fb7806cd9
+      internalID: 205116848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_21
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 568
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a3a27046a9ab046b68009f332e3e20
+      internalID: -1360125487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_22
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 568
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296d3792b64c51549952a03a8b057a6d
+      internalID: 262782908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_23
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 568
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7803aacac7ff246986320662c4a6fb
+      internalID: 1191411255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_24
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 565
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8963167ef59150d49b47104fdb21e1d3
+      internalID: 1561235751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_25
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 568
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52916ad78474d84a882135711cd6ede
+      internalID: -1371802579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_26
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 568
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5251cfd78243a494e877994b95b7bc0f
+      internalID: -363545946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_27
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 568
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf49724bcdfaa44ea2aea081ccb98be
+      internalID: -2003946288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_28
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 568
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f2f0ec323c3e44489e98911f378d16
+      internalID: -671732341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_29
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 568
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0f18c6b226358428d34c7fb1ca5310
+      internalID: 1955200569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_30
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 568
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250c1b0202688fb46a34fffbb71d3b3d
+      internalID: 132240303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_31
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 568
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fa106d123eb32489de50db8cb89515
+      internalID: -1254182044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_32
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 565
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b56f3514160224f8a050cdd8dc96d5
+      internalID: -911878304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_33
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 568
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee41ed87f12e93c40bb789636051c88d
+      internalID: 1187333895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_34
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 552
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd6c9af8a9e4854b873763ffcae8642
+      internalID: -217148176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_35
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 565
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4add95556a8f4f742aa9b77912fae67b
+      internalID: -1497306903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_36
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 568
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e25ff9a50f8464bbc6b4022ebe0aaf
+      internalID: 1267588638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_37
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 568
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e17af3c87fa2646a2a9f2ae44d8180
+      internalID: 1407096929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_38
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 568
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76af8fa097e32544d9b735e6971832cc
+      internalID: 329421666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_39
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 565
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac33051f8ff3864499e9e7a43acc6d2e
+      internalID: -2121143860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_40
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 552
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a7cc98c744137468086cedb4b7d712
+      internalID: -539805066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_41
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 552
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2790d6543d20e4da59b6db4cec12d2
+      internalID: 1235011950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_42
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 550
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a1bd91575da9b4f85af4ce38b69916
+      internalID: 385358994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_43
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 552
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d1f84e2f6ca9f4da0c990defc98eed
+      internalID: 588098910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_44
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 552
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa2dcc41545beb4ca84b3f57925410e
+      internalID: 592720759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_45
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 552
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca176fdc13c74e741aa0f4d851f81e6e
+      internalID: 1853639805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_46
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 549
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c02e2ced634ee14797584c9ff20bdc5
+      internalID: -1904916044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_47
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 552
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d003e87c515374d960736ccea1663f
+      internalID: -2128285296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_48
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 552
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef20cdee529dca40bf2381ca86b8b78
+      internalID: -1862904698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_49
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 552
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f120701360814428d557c8f0a50627
+      internalID: -346990319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_50
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 552
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705e16fc63cacef4dbca20437cbf196e
+      internalID: -1050966685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_51
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 552
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae5cd5cd8680dd43b42a3c4c0ff2d80
+      internalID: -782963684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_52
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 552
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33aa450c1b637cd4abb3767ca5ac1b79
+      internalID: -1468823138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_53
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 552
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3af745b101b2e48a18bda973d4f0f6
+      internalID: -1302409901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_54
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 552
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c658df24250152241b1255ce45546dcf
+      internalID: -2024273553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_55
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 550
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bb284ff0b399d479ed314953162e9a
+      internalID: 1232847238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_56
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 552
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1cc294087ebc14fa68e41d01465e4a
+      internalID: -29125898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_57
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 552
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e57dba4de810d4084895010d5378a7
+      internalID: -1488191983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_58
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 552
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f8909b906ce5e42a6f9620afe6190e
+      internalID: 156033183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_59
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 499
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d406b121b18c08643ba1857ec9480d52
+      internalID: 2061583417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_60
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 499
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00481f813ec5ac44bf6aced16c45c59
+      internalID: -1605304520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_61
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 499
+        width: 60
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236ed91db7cd33445bffa2e8fbef5335
+      internalID: 1149874647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_62
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 500
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6443cffa5d5e1584da6c43727a81851b
+      internalID: -138251091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_63
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 351
+        width: 81
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5132f91e10031947aec63f5cad8d774
+      internalID: 468752613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_64
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 351
+        width: 79
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ab454091e97fd47854f7fe04ebdb8f
+      internalID: -1421413536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_65
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 350
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4178f4dc120b46747a64d46dcd4f47d2
+      internalID: -125355822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_66
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 351
+        width: 79
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649a6c47a30767142b7688b53a467101
+      internalID: 314121021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_67
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 351
+        width: 77
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6922f99b085494da2307570fa54b1c
+      internalID: -638018080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_68
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 351
+        width: 78
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d850464f7e52b5a47a2274db01470940
+      internalID: -2054226547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_69
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 350
+        width: 75
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81844f214ebfcad4ea6c9338dc6772e3
+      internalID: 196045911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_70
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 351
+        width: 80
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d168b707acf124e458d4bdb3d3604c5b
+      internalID: -1917354665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_71
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 373
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8588334d71f413c4aa338eadda83a761
+      internalID: 1418160344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_72
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 370
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6707cb2847b3ef41a17b040e18b8cbc
+      internalID: 2122200296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_73
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 370
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd935b22f89ddf448a85b4137e44e84
+      internalID: -220810234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_74
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 373
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19747bade32662b469f58241c25b721a
+      internalID: -297916431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_75
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 373
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae9eaef96125604e8d66c77fd466002
+      internalID: 272081752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_76
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 373
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08fa2b8eda8f2a45b1dc59d2a74fcfc
+      internalID: 1338438916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_77
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 370
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fe71941a6ab66428d1220d6ef31463
+      internalID: -963730376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_78
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 317
+        width: 49
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2070546c470b1049a1cd23e47fb3be6
+      internalID: 395531196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_79
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 352
+        width: 124
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52060b5dd7c7c544384331cde3f900e0
+      internalID: 1477219741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_80
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 355
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4850e26fccfe44bb6879e2f10f731b
+      internalID: -1145691637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_81
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 355
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7b3645627e948408c0657f0a777138
+      internalID: -1390549881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_82
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 355
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbafe7a66be2659468a225e6ca43cdef
+      internalID: -1473803960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_83
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 355
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba0576e6cb9e064db9553db64894c6a
+      internalID: 1033840632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_84
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989b8ad21e84f7f4e96b0c0558783e66
+      internalID: 1343663063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_85
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 339
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a46910b3ef4786428973cda75a3b7bc
+      internalID: 616887279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_86
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 339
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8222238dfbd13e149a0228e6720710eb
+      internalID: -516000803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_87
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 339
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51039fe32364c2458be85e81dc34647
+      internalID: 934181344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_88
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 336
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612ba58caed0f354f9fd19fa0b93db84
+      internalID: 1631495311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_89
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 339
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1530e30b5906a4e44b8add5a9c5f36c0
+      internalID: -97670939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_90
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 339
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf319a5afaaf77409843ecc596d0d16
+      internalID: 901660096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_91
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2ff600beddf3742a1e9daa74d62b84
+      internalID: 339444624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_92
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 337
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fb595cd47f5724aa0d2617d71b3426
+      internalID: 783683449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_93
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 336
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58bd576327969c418156a959bce69c5
+      internalID: -832291004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_94
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 339
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a661cebb698e7f84ba52022434b6c5a9
+      internalID: -1632154304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_95
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 339
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c52850f888ddc4aa746eb87d9d1176
+      internalID: -440499792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_96
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 339
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c21ac0d97173445814b4888e361e5f
+      internalID: 702791558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_97
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 339
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a59dcafe9a0694ca615a243f914b3c
+      internalID: -666957326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_98
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 339
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817bc54d92df058498972ea2bb889b0d
+      internalID: -1901219201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_99
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 191
+        width: 101
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db06c12ad47a374fa0bc4d9557c645a
+      internalID: -667811132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_100
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 191
+        width: 106
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7799627c2f18cf9418c97e32ac63dd60
+      internalID: 760389662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_101
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 320
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88750ad755d6cee42abbdb6dd873f43a
+      internalID: 766959730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_102
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 323
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36e4cd18278ba94da11b0b73a845e39
+      internalID: 1732409907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_103
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 323
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f02ed829138c646b6029eb2189b154
+      internalID: 636293057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_104
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 323
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e466bd9186bff42b2f6baa73d75141
+      internalID: 1998072950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_105
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 323
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd2c8d767d9b6e4483384a03a79e6ec
+      internalID: -872782433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_106
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 320
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fae67fc0e43ae45b21f5e44e444b46
+      internalID: -428800886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_107
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 323
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2630f6c2a2518124787d7a3d08b15983
+      internalID: -357955029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_108
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 323
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e06acbb9eaaa08459cc4ec3bd40a9df
+      internalID: -1485209363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_109
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 323
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d272993bef43e146887e350e1770932
+      internalID: 685963708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_110
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 323
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd97fb5b99bd344da70e8d19de98ae5
+      internalID: 1347705029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_111
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 323
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10b9fd5e5d35f94c9c9ab913186f8ac
+      internalID: 1307478222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_112
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 323
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50c2c65c562d96449815df020e3846b
+      internalID: 1489071190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_113
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 323
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0ba6765f405be4ea190a50ba253c05
+      internalID: 685985130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_114
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 191
+        width: 110
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3eec13790d988499943efc657b4287
+      internalID: -1712217409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_115
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 188
+        width: 107
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68dc86dad04ed646aea57c43106ee4d
+      internalID: -1486535884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_116
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 198
+        width: 102
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc59f6b130426364196f7e42646b49ba
+      internalID: -301859173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_117
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 203
+        width: 119
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e1333c672d2b741abd349e74f0bd9d
+      internalID: 2040656098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_118
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 205
+        width: 114
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc49f4bd9a058ee4584aa05d8deadb4f
+      internalID: 526022716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_119
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 205
+        width: 91
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98a735f7945c5b43bbbc98db66ad2a0
+      internalID: -1232599926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_120
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 204
+        width: 88
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e834c6914d80fe4d9840d280c18ddb2
+      internalID: -1979864164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_121
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 30
+        width: 89
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84209bf29c13d58499a3724ea9d2bc26
+      internalID: 1851003902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_122
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 30
+        width: 93
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2192d411c09d044eb9bcfdf9fa0b2c6
+      internalID: -2075805464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_123
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 30
+        width: 134
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118e89d5e3820b24b9740c6c3c0c950e
+      internalID: -372779089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_124
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 30
+        width: 138
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101d1842b89c20b4cbc8a1fdc0d1964a
+      internalID: -949939642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_125
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 30
+        width: 94
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0162f65b75708c649870584916bf45ac
+      internalID: 985182667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_126
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 30
+        width: 92
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5796275cf2bac444eb4824eea1ad39dd
+      internalID: -712542718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_127
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 30
+        width: 108
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c506e8260b9f68346b74a3863c772c10
+      internalID: -1909270319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_128
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 25
+        width: 103
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e3271ba739a344ea06ff8f52fbb875
+      internalID: 1842816216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_129
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 4
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a7c4d21e648104888d5d4fc3876ac5
+      internalID: -1867707731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Heroes of Might and Magic 2 - Cavalry_130
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 339
+        width: 58
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29f60e751bcf9643a17577403493555
+      internalID: -1099587848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_51: -782963684
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_67: -638018080
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_16: -407990610
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_24: 1561235751
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_92: 783683449
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_84: 1343663063
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_121: 1851003902
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_98: -1901219201
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_28: -671732341
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_109: 685963708
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_100: 760389662
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_62: -138251091
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_22: 262782908
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_65: -125355822
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_32: -911878304
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_69: 196045911
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_60: -1605304520
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_117: 2040656098
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_68: -2054226547
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_35: -1497306903
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_101: 766959730
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_106: -428800886
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_34: -217148176
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_63: 468752613
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_56: -29125898
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_58: 156033183
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_23: 1191411255
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_30: 132240303
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_42: 385358994
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_5: -2042474550
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_8: -392791170
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_53: -1302409901
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_52: -1468823138
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_13: 2022838557
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_86: -516000803
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_14: -1318519303
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_123: -372779089
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_81: -1390549881
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_74: -297916431
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_43: 588098910
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_97: -666957326
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_129: -1867707731
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_122: -2075805464
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_107: -357955029
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_48: -1862904698
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_6: 150473758
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_96: 702791558
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_54: -2024273553
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_45: 1853639805
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_29: 1955200569
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_40: -539805066
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_31: -1254182044
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_55: 1232847238
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_0: -1650965674
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_128: 1842816216
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_36: 1267588638
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_11: -2062887710
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_79: 1477219741
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_116: -301859173
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_105: -872782433
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_93: -832291004
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_76: 1338438916
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_110: 1347705029
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_72: 2122200296
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_3: 17765093
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_19: 1140269349
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_4: 97170910
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_20: 205116848
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_27: -2003946288
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_66: 314121021
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_119: -1232599926
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_10: 169795893
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_37: 1407096929
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_57: -1488191983
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_130: -1099587848
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_124: -949939642
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_125: 985182667
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_89: -97670939
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_64: -1421413536
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_1: -1101672288
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_21: -1360125487
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_49: -346990319
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_78: 395531196
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_126: -712542718
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_77: -963730376
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_95: -440499792
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_59: 2061583417
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_70: -1917354665
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_50: -1050966685
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_104: 1998072950
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_127: -1909270319
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_83: 1033840632
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_99: -667811132
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_111: 1307478222
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_9: 689950312
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_25: -1371802579
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_44: 592720759
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_118: 526022716
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_114: -1712217409
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_33: 1187333895
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_80: -1145691637
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_17: -1026162199
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_46: -1904916044
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_61: 1149874647
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_91: 339444624
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_73: -220810234
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_47: -2128285296
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_7: 1251968702
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_115: -1486535884
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_26: -363545946
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_85: 616887279
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_120: -1979864164
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_82: -1473803960
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_38: 329421666
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_15: -2128443307
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_94: -1632154304
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_103: 636293057
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_112: 1489071190
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_90: 901660096
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_113: 685985130
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_39: -2121143860
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_71: 1418160344
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_102: 1732409907
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_18: 1099381784
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_12: 206358202
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_131: 773979588
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_41: 1235011950
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_75: 272081752
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_88: 1631495311
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_87: 934181344
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_2: 160585063
+      PC Computer - Heroes of Might and Magic 2 - Cavalry_108: -1485209363
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
