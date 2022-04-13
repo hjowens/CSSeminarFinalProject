@@ -14,10 +14,22 @@ public class TIleMapMaker : MonoBehaviour
     public Tile Desert;
     public Tile Water;
     public Tilemap LandTiles;
+    [Range(1, 5)]
+    public int grassThresh = 2;
+    [Range(1, 5)]
+    public int mountainThresh = 3;
+    [Range(1, 5)]
+    public int forestThresh = 3;
+    [Range(1, 5)]
+    public int desertThresh = 3;
+    [Range(1, 10)]
+    public int Runs;
+    int[,] directions = new int[,] { {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, 0}, {1, 1} };
     // Start is called before the first frame update
     void Start()
     {
         createInitialMap();
+        runSim();
         translateMap();
     }
     private void createInitialMap()
@@ -48,6 +60,36 @@ public class TIleMapMaker : MonoBehaviour
                 }
             }
         }
+    }
+    private void runSim()
+    {
+        for (int x = 0; x < width; x++)
+        {
+            for(int y = 0; y < height; y++)
+            {
+                int changeCoord = checkCoord(x, y);
+                switch (changeCoord)
+                {
+                    case 0:
+                        terrainMap[x, y] = 0;
+                        break;
+                    case 1:
+                        terrainMap[x, y] = 1;
+                        break;
+                    case 2:
+                        terrainMap[x, y] = 2;
+                        break;
+                    case 3:
+                        terrainMap[x, y] = 3;
+                        break;
+                    case 4:
+                        terrainMap[x, y] = 4;
+                        break;
+                    case 5:
+                        continue;
+                }
+            }
+        }
         for (int i = 0; i < width; i++)
         {
             string row = "";
@@ -58,9 +100,13 @@ public class TIleMapMaker : MonoBehaviour
             Debug.Log(row);
         }
     }
-    private void runSim()
+    private int checkCoord(int x, int y)
     {
-
+        for(int i = 0; i < directions.Length; i++)
+        {
+            
+        }
+        return 0;
     }
     private void translateMap()
     {
