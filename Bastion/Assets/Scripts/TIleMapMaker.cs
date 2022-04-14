@@ -26,13 +26,19 @@ public class TIleMapMaker : MonoBehaviour
     [Range(0, 10)]
     public int Runs;
     int[,] directions = new int[,] { {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, 0}, {1, 1} };
-    // Start is called before the first frame update
+    // Start is called at the start. I runs all of the functions I need in this file in the correct order.
     void Start()
     {
+        int width2 = height;
+        int height2 = width;
+        width = width2;
+        height = height2;
         createInitialMap();
         runSim(Runs);
         translateMap();
     }
+    // This just creates the initial map with random terrain everywhere.
+    // The different terrain is: Water, Grassland, Mountain, Forest, and Desert
     private void createInitialMap()
     {
         terrainMap = new int[width, height];
@@ -43,25 +49,29 @@ public class TIleMapMaker : MonoBehaviour
                 float seed = Random.Range(0, 100);
                 switch (seed)
                 {
-                    case <= 10:
+                    case <= 15:
                         terrainMap[i, j] = 1;
                         break;
-                    case > 10 and <= 15:
+                    case > 15 and <= 20:
                         terrainMap[i, j] = 2;
                         break;
-                    case > 15 and <= 25:
+                    case > 20 and <= 30:
                         terrainMap[i, j] = 3;
                         break;
-                    case > 25 and <= 35:
+                    case > 30 and <= 40:
                         terrainMap[i, j] = 4;
                         break;
-                    case > 35:
+                    case > 40:
                         terrainMap[i, j] = 0;
                         break;
                 }
             }
         }
     }
+
+    // This implements the terrain generation/growth algorithm from another game.
+    // The algorithm takes a tile and looks at all the tiles around it, and if there
+    // are enough tiles of a certain type, it changes itself to that type.
     private void runSim(int numR)
     {
         for (int i = 0; i < numR; i++)
@@ -104,6 +114,7 @@ public class TIleMapMaker : MonoBehaviour
             Debug.Log(row);
         }
     }
+    // This is how the algoritm from before is implemented
     private int checkCoord(int x, int y)
     {
         int waterCount = 0;
@@ -144,7 +155,7 @@ public class TIleMapMaker : MonoBehaviour
                 continue;
             }
         }
-        if (waterCount == 6)
+        if (waterCount >= 5)
         {
             return 0;
         }
@@ -170,11 +181,12 @@ public class TIleMapMaker : MonoBehaviour
         }
         return 5;
     }
+    // Takes the 2d list generated from the rest of the code and turns it into a tilemap in Unity.
     private void translateMap()
     {
         for (int x = 0; x < width; x++)
         {
-            for (int y = 0; y < width; y++)
+            for (int y = 0; y < height; y++)
             {
                 int coord = terrainMap[x, y];
                 switch (coord)
