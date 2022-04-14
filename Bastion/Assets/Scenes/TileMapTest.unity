@@ -449,11 +449,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0397f6604d4d3f74a821acf3c1183e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 20
-  height: 20
+  width: 50
+  height: 50
   Grass: {fileID: 11400000, guid: b6e53d01591c6944da3d58b08cafe2e4, type: 2}
   Mountain: {fileID: 11400000, guid: 99d8b065044a45a409a45ab1ca0394a0, type: 2}
   Forest: {fileID: 11400000, guid: ce77f1c40b5e01e4db4f8a94ba68815a, type: 2}
   Desert: {fileID: 11400000, guid: dbe94100feab07f4abe4e6fb2841746e, type: 2}
   Water: {fileID: 11400000, guid: 33b5dc5b329aca746ba800324cabc424, type: 2}
   LandTiles: {fileID: 1344307349}
+  removeIslands: 1
+  grassThresh: 3
+  mountainThresh: 4
+  forestThresh: 3
+  desertThresh: 3
+  Runs: 4

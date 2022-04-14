@@ -14,22 +14,23 @@ public class TIleMapMaker : MonoBehaviour
     public Tile Desert;
     public Tile Water;
     public Tilemap LandTiles;
+    public bool removeIslands = true;
     [Range(1, 5)]
-    public int grassThresh = 2;
+    public int grassThresh = 3;
     [Range(1, 5)]
     public int mountainThresh = 3;
     [Range(1, 5)]
     public int forestThresh = 3;
     [Range(1, 5)]
     public int desertThresh = 3;
-    [Range(1, 10)]
+    [Range(0, 10)]
     public int Runs;
     int[,] directions = new int[,] { {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, 0}, {1, 1} };
     // Start is called before the first frame update
     void Start()
     {
         createInitialMap();
-        runSim();
+        runSim(Runs);
         translateMap();
     }
     private void createInitialMap()
@@ -42,51 +43,54 @@ public class TIleMapMaker : MonoBehaviour
                 float seed = Random.Range(0, 100);
                 switch (seed)
                 {
-                    case <= 20:
+                    case <= 10:
                         terrainMap[i, j] = 1;
                         break;
-                    case > 20 and <= 30:
+                    case > 10 and <= 15:
                         terrainMap[i, j] = 2;
                         break;
-                    case > 30 and <= 40:
+                    case > 15 and <= 25:
                         terrainMap[i, j] = 3;
                         break;
-                    case > 40 and <= 50:
+                    case > 25 and <= 35:
                         terrainMap[i, j] = 4;
                         break;
-                    case > 50:
+                    case > 35:
                         terrainMap[i, j] = 0;
                         break;
                 }
             }
         }
     }
-    private void runSim()
+    private void runSim(int numR)
     {
-        for (int x = 0; x < width; x++)
+        for (int i = 0; i < numR; i++)
         {
-            for(int y = 0; y < height; y++)
+            for (int x = 0; x < width; x++)
             {
-                int changeCoord = checkCoord(x, y);
-                switch (changeCoord)
+                for (int y = 0; y < height; y++)
                 {
-                    case 0:
-                        terrainMap[x, y] = 0;
-                        break;
-                    case 1:
-                        terrainMap[x, y] = 1;
-                        break;
-                    case 2:
-                        terrainMap[x, y] = 2;
-                        break;
-                    case 3:
-                        terrainMap[x, y] = 3;
-                        break;
-                    case 4:
-                        terrainMap[x, y] = 4;
-                        break;
-                    case 5:
-                        continue;
+                    int changeCoord = checkCoord(x, y);
+                    switch (changeCoord)
+                    {
+                        case 0:
+                            terrainMap[x, y] = 0;
+                            break;
+                        case 1:
+                            terrainMap[x, y] = 1;
+                            break;
+                        case 2:
+                            terrainMap[x, y] = 2;
+                            break;
+                        case 3:
+                            terrainMap[x, y] = 3;
+                            break;
+                        case 4:
+                            terrainMap[x, y] = 4;
+                            break;
+                        case 5:
+                            continue;
+                    }
                 }
             }
         }
@@ -102,11 +106,69 @@ public class TIleMapMaker : MonoBehaviour
     }
     private int checkCoord(int x, int y)
     {
-        for(int i = 0; i < directions.Length; i++)
+        int waterCount = 0;
+        int grassCount = 0;
+        int mountainCount = 0;
+        int forestCount = 0;
+        int desertCount = 0;
+        for (int i = 0; i < directions.Length; i++)
         {
-            
+            try
+            {
+                if (removeIslands == true)
+                {
+                    if (terrainMap[x - directions[i, 0], y - directions[i, 1]] == 0)
+                    {
+                        waterCount += 1;
+                    }
+                }
+                if (terrainMap[x - directions[i, 0], y - directions[i, 1]] == 1)
+                {
+                    grassCount += 1;
+                }
+                else if (terrainMap[x - directions[i, 0], y - directions[i, 1]] == 2)
+                {
+                    mountainCount += 1;
+                }
+                else if (terrainMap[x - directions[i, 0], y - directions[i, 1]] == 3)
+                {
+                    forestCount += 1;
+                }
+                else if (terrainMap[x - directions[i, 0], y - directions[i, 1]] == 4)
+                {
+                    desertCount += 1;
+                }
+            }
+            catch
+            {
+                continue;
+            }
         }
-        return 0;
+        if (waterCount == 6)
+        {
+            return 0;
+        }
+        if (terrainMap[x, y] == 2)
+        {
+            return 5;
+        }
+        if (mountainCount >= mountainThresh)
+        {
+            return 2;
+        }
+        else if (forestCount >= forestThresh)
+        {
+            return 3;
+        }
+        else if (desertCount >= desertThresh)
+        {
+            return 4;
+        }
+        else if (grassCount >= grassThresh)
+        {
+            return 1;
+        }
+        return 5;
     }
     private void translateMap()
     {
@@ -127,10 +189,10 @@ public class TIleMapMaker : MonoBehaviour
                         LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Mountain);
                         break;
                     case 3:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Desert);
+                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Forest);
                         break;
                     case 4:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Forest);
+                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Desert);
                         break;
                 }
             }
