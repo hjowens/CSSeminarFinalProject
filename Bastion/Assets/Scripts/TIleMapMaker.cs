@@ -15,6 +15,17 @@ public class TIleMapMaker : MonoBehaviour
     public Tile Water;
     public Tilemap LandTiles;
     public bool removeIslands = true;
+    [Range(0, 100)]
+    public int grassChance;
+    [Range(0, 100)]
+    public int mountainChance;
+    [Range(0, 100)]
+    public int forestChance;
+    [Range(0, 100)]
+    public int desertChance;
+    [Range(0, 100)]
+    public int waterChance;
+    int total;
     [Range(1, 5)]
     public int grassThresh = 3;
     [Range(1, 5)]
@@ -27,8 +38,17 @@ public class TIleMapMaker : MonoBehaviour
     public int Runs;
     int[,] directions = new int[,] { {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, 0}, {1, 1} };
     // Start is called at the start. I runs all of the functions I need in this file in the correct order.
+    enum Types
+    {
+        water = 0,
+        grass = 1,
+        mountain = 2,
+        forest = 3,
+        desert = 4
+    }
     void Start()
     {
+        total = grassChance + mountainChance + forestChance + desertChance + waterChance;
         int width2 = height;
         int height2 = width;
         width = width2;
@@ -46,7 +66,39 @@ public class TIleMapMaker : MonoBehaviour
         {
             for (int j = 0; j < height; j++)
             {
-                float seed = Random.Range(0, 100);
+                float seed = Random.Range(0, total);
+                int top = waterChance;
+                int bottom = 0;
+                if (seed <= top)
+                {
+                    terrainMap[i, j] = (int)Types.water;
+                }
+                top += grassChance;
+                bottom += waterChance;
+                if (seed <= top && seed > bottom)
+                {
+                    terrainMap[i, j] = (int)Types.grass;
+                }
+                top += mountainChance;
+                bottom += grassChance;
+                if (seed <= top && seed > bottom)
+                {
+                    terrainMap[i, j] = (int)Types.mountain;
+                }
+                top += forestChance;
+                bottom += mountainChance;
+                if (seed <= top && seed > bottom)
+                {
+                    terrainMap[i, j] = (int)Types.forest;
+                }
+                top += desertChance;
+                bottom += forestChance;
+                if (seed <= top && seed > bottom)
+                {
+                    terrainMap[i, j] = (int)Types.desert;
+                }
+
+                /*
                 switch (seed)
                 {
                     case <= 15:
@@ -64,7 +116,7 @@ public class TIleMapMaker : MonoBehaviour
                     case > 40:
                         terrainMap[i, j] = 0;
                         break;
-                }
+                }*/
             }
         }
     }
@@ -104,6 +156,7 @@ public class TIleMapMaker : MonoBehaviour
                 }
             }
         }
+        /*
         for (int i = 0; i < width; i++)
         {
             string row = "";
@@ -112,7 +165,7 @@ public class TIleMapMaker : MonoBehaviour
                 row += terrainMap[i, j].ToString() + ", ";
             }
             Debug.Log(row);
-        }
+        }*/
     }
     // This is how the algoritm from before is implemented
     private int checkCoord(int x, int y)
