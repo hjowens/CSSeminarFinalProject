@@ -332,7 +332,7 @@ TilemapRenderer:
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
-  m_Mode: 0
+  m_Mode: 1
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 --- !u!1839735485 &1344307349
@@ -405,61 +405,83 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1423565396
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1423565397}
-  - component: {fileID: 1423565398}
-  m_Layer: 0
-  m_Name: TileMapMaker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1423565397
+--- !u!4 &1423565397 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 8155653023044167272}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423565396}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 370641019}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1423565398
-MonoBehaviour:
+--- !u!1001 &8155653023044167272
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423565396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0397f6604d4d3f74a821acf3c1183e1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  width: 50
-  height: 50
-  Grass: {fileID: 11400000, guid: b6e53d01591c6944da3d58b08cafe2e4, type: 2}
-  Mountain: {fileID: 11400000, guid: 99d8b065044a45a409a45ab1ca0394a0, type: 2}
-  Forest: {fileID: 11400000, guid: ce77f1c40b5e01e4db4f8a94ba68815a, type: 2}
-  Desert: {fileID: 11400000, guid: dbe94100feab07f4abe4e6fb2841746e, type: 2}
-  Water: {fileID: 11400000, guid: 33b5dc5b329aca746ba800324cabc424, type: 2}
-  LandTiles: {fileID: 1344307349}
-  removeIslands: 1
-  grassThresh: 3
-  mountainThresh: 4
-  forestThresh: 3
-  desertThresh: 3
-  Runs: 4
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 370641019}
+    m_Modifications:
+    - target: {fileID: 8155653022160684092, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_Name
+      value: TileMapMaker
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684093, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155653022160684094, guid: d5e3cabcb960ade4eb7b280b64fdadf8,
+        type: 3}
+      propertyPath: LandTiles
+      value: 
+      objectReference: {fileID: 1344307349}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5e3cabcb960ade4eb7b280b64fdadf8, type: 3}

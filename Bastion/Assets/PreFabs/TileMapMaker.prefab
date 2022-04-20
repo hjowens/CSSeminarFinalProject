@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8155653022160684092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8155653022160684093}
+  - component: {fileID: 8155653022160684094}
+  m_Layer: 0
+  m_Name: TileMapMaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8155653022160684093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155653022160684092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8155653022160684094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155653022160684092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0397f6604d4d3f74a821acf3c1183e1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 90
+  height: 70
+  Grass: {fileID: 11400000, guid: b6e53d01591c6944da3d58b08cafe2e4, type: 2}
+  Mountain: {fileID: 11400000, guid: 99d8b065044a45a409a45ab1ca0394a0, type: 2}
+  Forest: {fileID: 11400000, guid: ce77f1c40b5e01e4db4f8a94ba68815a, type: 2}
+  Desert: {fileID: 11400000, guid: 5c5ebe292880e6b41ab9e2cae4e85ffd, type: 2}
+  Water: {fileID: 11400000, guid: 33b5dc5b329aca746ba800324cabc424, type: 2}
+  LandTiles: {fileID: 0}
+  removeIslands: 1
+  grassChance: 30
+  mountainChance: 10
+  forestChance: 20
+  desertChance: 20
+  waterChance: 100
+  grassThresh: 3
+  mountainThresh: 3
+  forestThresh: 3
+  desertThresh: 3
+  Runs: 5
