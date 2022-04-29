@@ -6,34 +6,61 @@ using UnityEngine.UI;
 public class UITab : MonoBehaviour
 {
     private bool isActive = true;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     public void toggleTab()
     {
-        List<Transform> children = new List<Transform>();
-
-        foreach (Transform child in transform)
+        if(isActive == true)
+        {
+            changeButtons(this.transform, false);
+        }
+        else if(isActive == false)
+        {
+            Transform Parent = transform.parent;
+            List<Transform> Panels = new List<Transform>();
+            foreach (Transform Panel in Parent.transform)
+            {
+                string Tag = Panel.gameObject.tag;
+                if (Tag == "Panel")
+                {
+                    Panels.Add(Panel);
+                    //Debug.Log(Panel.name);
+                }
+            }
+            foreach (Transform Panel in Panels)
+            {
+                if (Panel.gameObject.Equals(this.gameObject))
+                {
+                    changeButtons(Panel, true);
+                    //Debug.Log("hit this panel");
+                }
+                else
+                {
+                    changeButtons(Panel, false);
+                    //Debug.Log("hit another panel");
+                }
+            }
+        }
+    }
+    public void changeButtons(Transform Panel, bool target)
+    {
+        foreach (Transform child in Panel)
         {
             try
             {
                 GameObject obj = child.gameObject;
                 //Debug.Log(obj.name);
-                toggleInteract(obj, !isActive);
+                toggleInteract(obj, target);
             }
             catch
             {
                 continue;
             }
         }
-        isActive = !isActive;
+        Panel.GetComponent<UITab>().isActive = target;
     }
     public void toggleInteract(GameObject obj, bool target)
     {
-        Debug.Log(obj.name);
+        //Debug.Log(obj.name);
         Button targetButton = obj.GetComponent<Button>();
         Text textRenderer = obj.GetComponentInChildren<Text>();
 
