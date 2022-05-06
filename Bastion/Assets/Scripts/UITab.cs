@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class UITab : MonoBehaviour
 {
-    private bool isActive = true;
-
+    public bool isActive = true;
     public void toggleTab()
     {
         if(isActive == true)
