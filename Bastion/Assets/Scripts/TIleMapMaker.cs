@@ -13,8 +13,14 @@ public class TIleMapMaker : MonoBehaviour
     public Tile Forest;
     public Tile Desert;
     public Tile Water;
+    public Tile grassStone;
+    public Tile grassIron;
+    public Tile desertStone;
+    public Tile desertIron;
     public Tilemap LandTiles;
     public bool removeIslands = true;
+    [Range(0, 100)]
+    public int resourceAbundance;
     [Range(0, 100)]
     public int grassChance;
     [Range(0, 100)]
@@ -44,7 +50,11 @@ public class TIleMapMaker : MonoBehaviour
         grass = 1,
         mountain = 2,
         forest = 3,
-        desert = 4
+        desert = 4,
+        grassiron = 5,
+        grassstone = 6,
+        desertiron = 7,
+        desertstone = 8
     }
     void Start()
     {
@@ -233,6 +243,39 @@ public class TIleMapMaker : MonoBehaviour
             return 1;
         }
         return 5;
+    }
+    public void randomResources()
+    {
+        int amountResources = width * height / (resourceAbundance / 1000);
+
+        for (int i = 0; i < amountResources; i++)
+        {
+            int StoneIron = Random.Range(0, 1);
+            int GrassDesert = 0;
+            int xCoord = Random.Range(0, width);
+            int yCoord = Random.Range(0, height);
+            while (terrainMap[xCoord, yCoord] == (int)Types.water || terrainMap[xCoord, yCoord] == (int)Types.mountain)
+            {
+                xCoord = Random.Range(0, width);
+                yCoord = Random.Range(0, height);
+            }
+            if (terrainMap[xCoord, yCoord] == (int)Types.grass || terrainMap[xCoord, yCoord] == (int)Types.forest)
+            {
+                GrassDesert = (int)Types.grassiron;
+            }
+            else
+            {
+                GrassDesert = (int)Types.desertiron;
+            }
+            if (StoneIron == 0)
+            {
+                terrainMap[xCoord, yCoord] = GrassDesert;
+            }
+            else if (StoneIron == 1)
+            {
+                terrainMap[xCoord, yCoord] = GrassDesert + 1;
+            }
+        }
     }
     // Takes the 2d list generated from the rest of the code and turns it into a tilemap in Unity.
     private void translateMap()
