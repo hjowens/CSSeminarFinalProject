@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 45c25f14e10172e45a8307646b307ded
+guid: 0742efc36b6b8fa4da302231697d074a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,11 +116,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrassIron_0
+      name: fantasyhextiles_v3 (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 78
+        y: 99
         width: 32
         height: 48
       alignment: 0
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4338a7d0fe159bb4b89bc9624e3b1640
-      internalID: -804618992
+      spriteID: a5e3c0bf954653046a29428db6c864f5
+      internalID: 1925049278
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GrassIron_0: -804618992
+      fantasyhextiles_v3 (1)_0: 1925049278
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

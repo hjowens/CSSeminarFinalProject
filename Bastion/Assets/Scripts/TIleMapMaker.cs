@@ -19,7 +19,7 @@ public class TIleMapMaker : MonoBehaviour
     public Tile desertIron;
     public Tilemap LandTiles;
     public bool removeIslands = true;
-    [Range(0, 100)]
+    [Range(1, 100)]
     public int resourceAbundance;
     [Range(0, 100)]
     public int grassChance;
@@ -65,6 +65,7 @@ public class TIleMapMaker : MonoBehaviour
         height = height2;
         createInitialMap();
         runSim(Runs);
+        randomResources(resourceAbundance);
         translateMap();
     }
     // This just creates the initial map with random terrain everywhere.
@@ -244,17 +245,25 @@ public class TIleMapMaker : MonoBehaviour
         }
         return 5;
     }
-    public void randomResources()
+    public void randomResources(int abundance)
     {
-        int amountResources = width * height / (resourceAbundance / 1000);
-
+        int amountResources = 0;
+        if (abundance != 0)
+        {
+            amountResources = (int)(width * height * ((float)abundance / 1000.0));
+        }
+        else
+        {
+            amountResources = 0;
+        }
+        Debug.Log(amountResources);
         for (int i = 0; i < amountResources; i++)
         {
-            int StoneIron = Random.Range(0, 1);
+            int StoneIron = Random.Range(0, 2);
             int GrassDesert = 0;
             int xCoord = Random.Range(0, width);
             int yCoord = Random.Range(0, height);
-            while (terrainMap[xCoord, yCoord] == (int)Types.water || terrainMap[xCoord, yCoord] == (int)Types.mountain)
+            while (terrainMap[xCoord, yCoord] == (int)Types.water || terrainMap[xCoord, yCoord] == (int)Types.mountain || checkforResources(xCoord, yCoord) == true)
             {
                 xCoord = Random.Range(0, width);
                 yCoord = Random.Range(0, height);
@@ -277,6 +286,27 @@ public class TIleMapMaker : MonoBehaviour
             }
         }
     }
+    private bool checkforResources(int xCoord, int yCoord)
+    {
+        for (int i = 0; i < directions.Length - 1; i++)
+        {
+            for (int j = (int)Types.grassiron; j <= (int)Types.desertstone; j++)
+            {
+                try
+                {
+                    if (terrainMap[xCoord + directions[i, 0], yCoord + directions[i, 1]] == j)
+                    {
+                        return true;
+                    }
+                }
+                catch
+                {
+                    continue;
+                }
+            }
+        }
+        return false;
+    }
     // Takes the 2d list generated from the rest of the code and turns it into a tilemap in Unity.
     private void translateMap()
     {
@@ -287,20 +317,32 @@ public class TIleMapMaker : MonoBehaviour
                 int coord = terrainMap[x, y];
                 switch (coord)
                 {
-                    case 0:
+                    case (int)Types.water:
                         LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Water);
                         break;
-                    case 1:
+                    case (int)Types.grass:
                         LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Grass);
                         break;
-                    case 2:
+                    case (int)Types.mountain:
                         LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Mountain);
                         break;
-                    case 3:
+                    case (int)Types.forest:
                         LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Forest);
                         break;
-                    case 4:
+                    case (int)Types.desert:
                         LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Desert);
+                        break;
+                    case (int)Types.grassiron:
+                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), grassIron);
+                        break;
+                    case (int)Types.grassstone:
+                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), grassStone);
+                        break;
+                    case (int)Types.desertiron:
+                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), desertIron);
+                        break;
+                    case (int)Types.desertstone:
+                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), desertStone);
                         break;
                 }
             }

@@ -51,8 +51,13 @@ MonoBehaviour:
   Forest: {fileID: 11400000, guid: ce77f1c40b5e01e4db4f8a94ba68815a, type: 2}
   Desert: {fileID: 11400000, guid: 5c5ebe292880e6b41ab9e2cae4e85ffd, type: 2}
   Water: {fileID: 11400000, guid: 33b5dc5b329aca746ba800324cabc424, type: 2}
+  grassStone: {fileID: 11400000, guid: a32d3a3bb1647b04386934d672d86884, type: 2}
+  grassIron: {fileID: 11400000, guid: f0a1d3e4e251ad04f9817b8f8a2ced64, type: 2}
+  desertStone: {fileID: 11400000, guid: 5832474bb15b6d64aacedb560022131a, type: 2}
+  desertIron: {fileID: 11400000, guid: 1ef24daba23a8004b9d10f97e113f730, type: 2}
   LandTiles: {fileID: 0}
   removeIslands: 1
+  resourceAbundance: 0
   grassChance: 30
   mountainChance: 10
   forestChance: 20
