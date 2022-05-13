@@ -217,10 +217,8 @@ public class TIleMapMaker : MonoBehaviour
     }
     public void randomResources(int abundance)
     {
-        List<Vector2Int> grassForestList = new List<Vector2Int>();
-        int grassForestLength = 0;
-        List<Vector2Int> desertList = new List<Vector2Int>();
-        int desertLength = 0;
+        List<Vector2Int> resourceList = new List<Vector2Int>();
+        int resourceLength = 0;
         for(int i = 0; i < width; i++)
         {
             for(int j = 0; j < height; j++)
@@ -229,24 +227,21 @@ public class TIleMapMaker : MonoBehaviour
                 switch (coord)
                 {
                     case (int)Types.desert:
-                        desertList.Add(new Vector2Int(i, j));
-                        desertLength += 1;
+                        resourceList.Add(new Vector2Int(i, j));
+                        resourceLength += 1;
                         break;
                     case (int)Types.grass:
-                        grassForestList.Add(new Vector2Int(i, j));
-                        grassForestLength += 1;
+                        resourceList.Add(new Vector2Int(i, j));
+                        resourceLength += 1;
                         break;
                     case (int)Types.forest:
-                        grassForestList.Add(new Vector2Int(i, j));
-                        grassForestLength += 1;
+                        resourceList.Add(new Vector2Int(i, j));
+                        resourceLength += 1;
                         break;
                 }
             }
         }
-        //Debug.Log(grassForestList.Capacity + ", " + desertList.Capacity);
-        Debug.Log(grassForestLength + ", " + desertLength);
         int amountResources = amountResources = (int)(width * height * ((float)abundance / 1000.0));
-        //.Log(amountResources);
         for (int i = 0; i < amountResources; i++)
         {
             int stoneIron = Random.Range(0, 2);
@@ -254,64 +249,22 @@ public class TIleMapMaker : MonoBehaviour
             {
                 stoneIron = 1;
             }
-            int grassDesertRand = Random.Range(0, 100);
-            Debug.Log(grassDesertRand);
-            Debug.Log(grassDesertRand > (int)((float)(desertLength) / (float)(grassForestLength) * 100.0));
-            if (grassDesertRand > (int)((float)(desertLength) / (float)(grassForestLength) * 100.0))
+            try
             {
-                try
+                int Rand = Random.Range(0, resourceLength - 1);
+                if (checkforResources(resourceList[Rand].x, resourceList[Rand].y) == false)
                 {
-                    int Rand = Random.Range(0, grassForestLength - 1);
-                    if (checkforResources(grassForestList[Rand].x, grassForestList[Rand].y) == false) 
-                        terrainMap[grassForestList[Rand].x, grassForestList[Rand].y] = (int)Types.grassiron + stoneIron;
-                }
-                catch
-                {
-                    Debug.Log("CATCH, " + grassForestList.Capacity);
-                    continue;
+                    if(terrainMap[resourceList[Rand].x, resourceList[Rand].y] == (int)Types.grass || terrainMap[resourceList[Rand].x, resourceList[Rand].y] == (int)Types.forest)
+                        terrainMap[resourceList[Rand].x, resourceList[Rand].y] = (int)Types.grassiron + stoneIron;
+                    else if(terrainMap[resourceList[Rand].x, resourceList[Rand].y] == (int)Types.desert)
+                        terrainMap[resourceList[Rand].x, resourceList[Rand].y] = (int)Types.desertiron + stoneIron;
                 }
             }
-            else
+            catch
             {
-                try
-                {
-                    int Rand = Random.Range(0, desertLength - 1);
-                    if (checkforResources(grassForestList[Rand].x, grassForestList[Rand].y) == false)
-                        terrainMap[desertList[Rand].x, desertList[Rand].y] = (int)Types.desertiron + stoneIron;
-                }
-                catch
-                {
-                    Debug.Log("CATCH, " + grassForestList.Capacity);
-                    continue;
-                }
+                Debug.Log("CATCH");
+                continue;
             }
-
-            /*
-            int xCoord = Random.Range(0, width);
-            int yCoord = Random.Range(0, height);
-            
-            while (terrainMap[xCoord, yCoord] == (int)Types.water || terrainMap[xCoord, yCoord] == (int)Types.mountain || checkforResources(xCoord, yCoord) == true)
-            {
-                xCoord = Random.Range(0, width);
-                yCoord = Random.Range(0, height);
-            }
-            if (terrainMap[xCoord, yCoord] == (int)Types.grass || terrainMap[xCoord, yCoord] == (int)Types.forest)
-            {
-                GrassDesert = (int)Types.grassiron;
-            }
-            else
-            {
-                GrassDesert = (int)Types.desertiron;
-            }
-            if (StoneIron == 0)
-            {
-                terrainMap[xCoord, yCoord] = GrassDesert;
-            }
-            else if (StoneIron == 1)
-            {
-                terrainMap[xCoord, yCoord] = GrassDesert + 1;
-            }
-            */
         }
     }
     private bool checkforResources(int xCoord, int yCoord)
