@@ -5,10 +5,16 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public int Speed = 5;
+    public int zoomSpeed = 10;
     // Update is called once per frame
-    void Update()
+    private void Start()
+    {
+        Time.fixedDeltaTime = 0.01f;
+    }
+    private void FixedUpdate()
     {
         movePos(checkInput());
+        changeZoom();
     }
     private Vector3 checkInput()
     {
@@ -19,5 +25,19 @@ public class CameraMovement : MonoBehaviour
     private void movePos(Vector3 Move)
     {
         transform.position += Move;
+    }
+    public void changeZoom()
+    {
+        float scrollDirec = Input.GetAxis("Mouse ScrollWheel");
+        GetComponent<Camera>().orthographicSize += scrollDirec * zoomSpeed / 10;
+
+        if (Input.GetKeyDown(KeyCode.Equals))
+        {
+            GetComponent<Camera>().orthographicSize = GetComponent<Camera>().orthographicSize - 1;
+        }
+        else if (Input.GetKeyDown(KeyCode.Minus))
+        {
+            GetComponent<Camera>().orthographicSize = GetComponent<Camera>().orthographicSize + 1;
+        }
     }
 }
