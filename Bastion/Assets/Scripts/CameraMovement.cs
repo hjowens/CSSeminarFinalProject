@@ -29,7 +29,11 @@ public class CameraMovement : MonoBehaviour
     public void changeZoom()
     {
         float scrollDirec = Input.GetAxis("Mouse ScrollWheel");
-        GetComponent<Camera>().orthographicSize += scrollDirec * zoomSpeed / 10;
+        GetComponent<Camera>().orthographicSize += scrollDirec * zoomSpeed / -10;
+        if (GetComponent<Camera>().orthographicSize < 1)
+        {
+            GetComponent<Camera>().orthographicSize = 1;
+        }
 
         if (Input.GetKeyDown(KeyCode.Equals))
         {
