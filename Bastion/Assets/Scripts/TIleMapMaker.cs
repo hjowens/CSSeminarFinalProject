@@ -2,6 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+enum Types
+{
+    water = 0,
+    grass = 1,
+    mountain = 2,
+    forest = 3,
+    desert = 4,
+    grassiron = 5,
+    grassstone = 6,
+    desertiron = 7,
+    desertstone = 8
+}
 
 public class TIleMapMaker : MonoBehaviour
 {
@@ -44,18 +56,7 @@ public class TIleMapMaker : MonoBehaviour
     public int Runs;
     int[,] directions = new int[,] { {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, 0}, {1, 1} };
     // Start is called at the start. I runs all of the functions I need in this file in the correct order.
-    enum Types
-    {
-        water = 0,
-        grass = 1,
-        mountain = 2,
-        forest = 3,
-        desert = 4,
-        grassiron = 5,
-        grassstone = 6,
-        desertiron = 7,
-        desertstone = 8
-    }
+    
     void Start()
     {
         total = grassChance + mountainChance + forestChance + desertChance + waterChance;

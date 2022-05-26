@@ -1,17 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class CityCenter : MonoBehaviour
 {
-    public int Radius = 5;
+    public int Radius = 2;
     public int Population;
     public int Food;
     public int Production;
     private int popGrowth;
     public bool Selected;
+    private List<Tile> allTiles = new List<Tile>();
     private List<GameObject> Buildings = new List<GameObject>();
     private List<GameObject> inPBuildings = new List<GameObject>();
+    public Tilemap baseTiles;
+    public TIleMapMaker TMMaker;
+    private int grassTiles;
+    private int desertTiles;
+    private int forestTiles;
+    private int waterTiles;
+    private int mineTiles;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +36,54 @@ public class CityCenter : MonoBehaviour
     public void build()
     {
 
+    }
+    private List<Vector2Int> getAllDirections(int radius)
+    {
+        return null;
+    }
+
+    public void updateTiles()
+    {
+        GridLayout gridLayout = transform.parent.GetComponentInParent<GridLayout>();
+        Vector3Int cellPosition = gridLayout.WorldToCell(transform.position);
+        int[,] terrainMap = TMMaker.terrainMap;
+        List<Vector2Int> directions = getAllDirections(Radius);
+        foreach(var direction in directions)
+        {
+            try
+            {
+                int tile = terrainMap[direction.x, direction.y];
+                switch(tile){
+                    case (int)Types.grass:
+                        grassTiles += 1;
+                        break;
+                    case (int)Types.forest:
+                        forestTiles += 1;
+                        break;
+                    case (int)Types.desert:
+                        desertTiles += 1;
+                        break;
+                    case (int)Types.water:
+                        waterTiles += 1;
+                        break;
+                    case (int)Types.grassiron:
+                        mineTiles += 1;
+                        break;
+                    case (int)Types.desertiron:
+                        mineTiles += 1;
+                        break;
+                    case (int)Types.grassstone:
+                        mineTiles += 1;
+                        break;
+                    case (int)Types.desertstone:
+                        mineTiles += 1;
+                        break;
+                }
+            }
+            catch
+            {
+                continue;
+            }
+        }
     }
 }
