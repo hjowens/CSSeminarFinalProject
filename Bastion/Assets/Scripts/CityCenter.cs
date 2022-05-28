@@ -21,10 +21,12 @@ public class CityCenter : MonoBehaviour
     private int forestTiles;
     private int waterTiles;
     private int mineTiles;
+    private float spawnTime;
     // Start is called before the first frame update
     void Start()
     {
-        
+        // This is for settling tile disputes between cities when a city is spawned or expanded.
+        spawnTime = Time.time;
     }
 
     public void executeTurn()
@@ -39,9 +41,27 @@ public class CityCenter : MonoBehaviour
     }
     private List<Vector2Int> getAllDirections(int radius)
     {
-        return null;
+        List<Vector2Int> allDirections = new List<Vector2Int>();
+        //int[,] testMap = new int[radius * 4, radius * 4];
+        Vector2Int origin = new Vector2Int(radius * 2, radius * 2);
+        for (int i = 0; i < radius * 4; i++)
+        {
+            for (int j = 0; j < radius * 4; j++)
+            {
+                if(Mathf.Abs(origin.x - i) <= radius || Mathf.Abs(origin.y - j) <= radius)
+                {
+                    Vector2Int Vec = new Vector2Int(i, j);
+                    allDirections.Add(Vec);
+                } 
+            }
+        }
+        return allDirections;
     }
-
+    // in progress
+    public bool checkTileIntersection(Vector2Int loc)
+    {
+        return false;
+    }
     public void updateTiles()
     {
         GridLayout gridLayout = transform.parent.GetComponentInParent<GridLayout>();
@@ -85,5 +105,10 @@ public class CityCenter : MonoBehaviour
                 continue;
             }
         }
+    }
+
+    public float getSpawnTime()
+    {
+        return spawnTime;
     }
 }
