@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class UITab : MonoBehaviour
 {
     public bool isActive = true;
+
+    
     public void toggleTab()
     {
         if(isActive == true)
@@ -40,6 +43,19 @@ public class UITab : MonoBehaviour
             }
         }
     }
+    public bool CheckMouseOverTab()
+    {
+
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public void changeButtons(Transform Panel, bool target)
     {
         foreach (Transform child in Panel)

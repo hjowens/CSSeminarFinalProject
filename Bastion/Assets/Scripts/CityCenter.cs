@@ -21,12 +21,16 @@ public class CityCenter : MonoBehaviour
     private int forestTiles;
     private int waterTiles;
     private int mineTiles;
-    private float spawnTime;
+    public int cityID;
+    public GameObject Controller;
+    public CityTileManager cityTileManager;
+    private int[,] cityMap;
+    private int[,] buildingMap;
     // Start is called before the first frame update
     void Start()
     {
-        // This is for settling tile disputes between cities when a city is spawned or expanded.
-        spawnTime = Time.time;
+        cityMap = cityTileManager.cityMap;
+        buildingMap = cityTileManager.buildingMap;
     }
 
     public void executeTurn()
@@ -65,39 +69,54 @@ public class CityCenter : MonoBehaviour
     public void updateTiles()
     {
         GridLayout gridLayout = transform.parent.GetComponentInParent<GridLayout>();
-        Vector3Int cellPosition = gridLayout.WorldToCell(transform.position);
+        Vector3Int cellPos = gridLayout.WorldToCell(transform.position);
         int[,] terrainMap = TMMaker.terrainMap;
         List<Vector2Int> directions = getAllDirections(Radius);
+        grassTiles = 0;
+        waterTiles = 0;
+        desertTiles = 0;
+        forestTiles = 0;
+        mineTiles = 0;
         foreach(var direction in directions)
         {
             try
             {
-                int tile = terrainMap[direction.x, direction.y];
-                switch(tile){
-                    case (int)Types.grass:
-                        grassTiles += 1;
-                        break;
-                    case (int)Types.forest:
-                        forestTiles += 1;
-                        break;
-                    case (int)Types.desert:
-                        desertTiles += 1;
-                        break;
-                    case (int)Types.water:
-                        waterTiles += 1;
-                        break;
-                    case (int)Types.grassiron:
-                        mineTiles += 1;
-                        break;
-                    case (int)Types.desertiron:
-                        mineTiles += 1;
-                        break;
-                    case (int)Types.grassstone:
-                        mineTiles += 1;
-                        break;
-                    case (int)Types.desertstone:
-                        mineTiles += 1;
-                        break;
+                int tile = terrainMap[cellPos.x + direction.x, cellPos.y + direction.y];
+                int tileID = cityMap[cellPos.x + direction.x, cellPos.y + direction.y];
+                // checks whether this tile is already owned by this city or another city or whether it's not owned at all
+                if (tileID == cityID || tileID == 0)
+                {
+                    if(tileID == 0)
+                    {
+                        cityMap[cellPos.x + direction.x, cellPos.y + direction.y] = cityID;
+                    }
+                    switch (tile)
+                    {
+                        case (int)Types.grass:
+                            grassTiles += 1;
+                            break;
+                        case (int)Types.forest:
+                            forestTiles += 1;
+                            break;
+                        case (int)Types.desert:
+                            desertTiles += 1;
+                            break;
+                        case (int)Types.water:
+                            waterTiles += 1;
+                            break;
+                        case (int)Types.grassiron:
+                            mineTiles += 1;
+                            break;
+                        case (int)Types.desertiron:
+                            mineTiles += 1;
+                            break;
+                        case (int)Types.grassstone:
+                            mineTiles += 1;
+                            break;
+                        case (int)Types.desertstone:
+                            mineTiles += 1;
+                            break;
+                    }
                 }
             }
             catch
@@ -107,8 +126,8 @@ public class CityCenter : MonoBehaviour
         }
     }
 
-    public float getSpawnTime()
+    public float getCityID()
     {
-        return spawnTime;
+        return cityID;
     }
 }

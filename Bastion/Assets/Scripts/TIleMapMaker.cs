@@ -300,31 +300,31 @@ public class TIleMapMaker : MonoBehaviour
                 switch (coord)
                 {
                     case (int)Types.water:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Water);
+                        LandTiles.SetTile(new Vector3Int(x, y, 0), Water);
                         break;
                     case (int)Types.grass:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Grass);
+                        LandTiles.SetTile(new Vector3Int(x, y , 0), Grass);
                         break;
                     case (int)Types.mountain:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Mountain);
+                        LandTiles.SetTile(new Vector3Int(x , y, 0), Mountain);
                         break;
                     case (int)Types.forest:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Forest);
+                        LandTiles.SetTile(new Vector3Int(x , y , 0), Forest);
                         break;
                     case (int)Types.desert:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), Desert);
+                        LandTiles.SetTile(new Vector3Int(x , y , 0), Desert);
                         break;
                     case (int)Types.grassiron:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), grassIron);
+                        LandTiles.SetTile(new Vector3Int(x , y , 0), grassIron);
                         break;
                     case (int)Types.grassstone:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), grassStone);
+                        LandTiles.SetTile(new Vector3Int(x , y , 0), grassStone);
                         break;
                     case (int)Types.desertiron:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), desertIron);
+                        LandTiles.SetTile(new Vector3Int(x, y , 0), desertIron);
                         break;
                     case (int)Types.desertstone:
-                        LandTiles.SetTile(new Vector3Int(x - width / 2, y - height / 2, 0), desertStone);
+                        LandTiles.SetTile(new Vector3Int(x , y , 0), desertStone);
                         break;
                 }
             }

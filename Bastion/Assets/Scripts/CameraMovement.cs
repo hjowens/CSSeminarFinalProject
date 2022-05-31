@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public int Speed = 5;
-    public int zoomSpeed = 10;
+    public int Speed = 100;
+    public int zoomSpeed = 40;
     // Update is called once per frame
     private void Start()
     {
         Time.fixedDeltaTime = 0.01f;
+        transform.position = new Vector3(20, 20, transform.position.z);
     }
     private void FixedUpdate()
     {

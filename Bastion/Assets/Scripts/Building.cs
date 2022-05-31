@@ -9,4 +9,6 @@ public class Building : MonoBehaviour
     public int popslots = 1;
     public int productionLeft;
 
+    
+
 }
