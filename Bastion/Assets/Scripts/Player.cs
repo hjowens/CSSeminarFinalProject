@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3Int CellPos = buildingMap.WorldToCell(mousePos);
-        
+        Debug.Log(CellPos);
         switch (Selected)
         {
             case (int)BuildingTypes.cityCenter:
