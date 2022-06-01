@@ -9,11 +9,13 @@ public class CityCenter : MonoBehaviour
     public int Population;
     public int Food;
     public int Production;
+    public int Iron;
+    public int Stone;
     private int popGrowth;
     public bool Selected;
     private List<Tile> allTiles = new List<Tile>();
     private List<GameObject> Buildings = new List<GameObject>();
-    private List<GameObject> inPBuildings = new List<GameObject>();
+    private List<Building> inPBuildings = new List<Building>();
     public Tilemap baseTiles;
     public TIleMapMaker TMMaker;
     private int grassTiles;
@@ -22,7 +24,7 @@ public class CityCenter : MonoBehaviour
     private int waterTiles;
     private int mineTiles;
     public int cityID;
-    public GameObject Controller;
+    //public GameObject Controller;
     public CityTileManager cityTileManager;
     private int[,] cityMap;
     private int[,] buildingMap;
@@ -31,18 +33,22 @@ public class CityCenter : MonoBehaviour
     {
         cityMap = cityTileManager.cityMap;
         buildingMap = cityTileManager.buildingMap;
+        cityID = cityTileManager.currentCityID;
+        updateTiles();
     }
 
     public void executeTurn()
     {
 
     }
+
     // when using the build tab, buildings will be added to the inPBuildins list
-    // and then this function will be called with the city's production distributed throughaout the first three buildings in the list.
+    // and then this function will be called with the city's production given to the first building in the list.
     public void build()
     {
 
     }
+    // returns a list of all vectors to hexagonal tiles a certain radius away when updating tiles.
     private List<Vector2Int> getAllDirections(int radius)
     {
         List<Vector2Int> allDirections = new List<Vector2Int>();
@@ -52,16 +58,23 @@ public class CityCenter : MonoBehaviour
         {
             for (int j = 0; j < radius * 4; j++)
             {
-                if(Mathf.Abs(origin.x - i) <= radius || Mathf.Abs(origin.y - j) <= radius)
+                if(Mathf.Abs(origin.x - i) <= radius && Mathf.Abs(origin.y - j) <= radius)
                 {
-                    Vector2Int Vec = new Vector2Int(i, j);
+                    Vector2Int Vec = new Vector2Int(origin.x - i, origin.y - j);
                     allDirections.Add(Vec);
                 } 
             }
+            
         }
+        /*
+        foreach (var direciton in allDirections)
+        {
+            Debug.Log(direciton);
+        }
+        */
         return allDirections;
     }
-    // in progress
+    // supposed to check whether or not there is already a building in that tile spot
     public bool checkTileIntersection(Vector2Int loc)
     {
         return false;
@@ -89,6 +102,7 @@ public class CityCenter : MonoBehaviour
                     if(tileID == 0)
                     {
                         cityMap[cellPos.x + direction.x, cellPos.y + direction.y] = cityID;
+                        //Debug.Log(cityMap[cellPos.x + direction.x, cellPos.y + direction.y]);
                     }
                     switch (tile)
                     {

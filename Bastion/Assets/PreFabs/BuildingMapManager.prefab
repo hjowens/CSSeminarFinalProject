@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2481727241474462701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2481727241474462700}
+  - component: {fileID: 2481727241474462611}
+  m_Layer: 0
+  m_Name: BuildingMapManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2481727241474462700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481727241474462701}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2481727241474462611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481727241474462701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a1a9406d7d14f845b89a4f799652bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TMMaker: {fileID: 0}
+  currentCityID: 1
+  cityCenter: {fileID: 11400000, guid: a93bf692226c46b47b10f2a4c31e0ab2, type: 2}
+  grassIronMine: {fileID: 11400000, guid: 52dd897c211f9464c8402a73c66835b2, type: 2}
+  grassStoneMine: {fileID: 11400000, guid: 8a4c2c2d00309fc4bb7acbc543194877, type: 2}
+  desertIronMine: {fileID: 11400000, guid: b4a961d4d258ca54a96244fe8eb39c0b, type: 2}
+  desertStoneMine: {fileID: 11400000, guid: 296ad9af37e903e428b71be1127baeaf, type: 2}
+  farm: {fileID: 11400000, guid: 8bd3d8529cefe82449e8a4670d5dd22a, type: 2}
+  lumberYard: {fileID: 0}
+  taxOffice: {fileID: 0}
+  publicForum: {fileID: 11400000, guid: 184d4f3d9d75c9940aba2477e102641b, type: 2}
+  buildingTiles: {fileID: 0}
+  CityCenter: {fileID: 8296697948174119459, guid: 0e9f41123fb4c904aa6417654e98f5ee,
+    type: 3}
+  Mine: {fileID: 1036635033170635334, guid: 5074d7297bcd4064cbf951b9cc1fc3dd, type: 3}
+  Farm: {fileID: 1373801289779253601, guid: 4446da7ccd4327540a4ff02be1e5e175, type: 3}
+  LumberYard: {fileID: 2198716467372773210, guid: 30bdcc1d09cec66459acea078375d23b,
+    type: 3}
+  TaxOffice: {fileID: 6860042078600181848, guid: 1acc63a6b7e5c564bbc10b87ad4e8973,
+    type: 3}
+  PublicForum: {fileID: 8851966366157437552, guid: 7b6dd2f5e33bb7e4e98e8e43e7014df9,
+    type: 3}

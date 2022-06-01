@@ -20,6 +20,7 @@ public class CityTileManager : MonoBehaviour
     public int[,] terrainMap;
     private int width;
     private int height;
+    public GameObject terrainGrid;
     public TIleMapMaker TMMaker;
     public int currentCityID = 1;
     public Tile cityCenter;
@@ -44,19 +45,18 @@ public class CityTileManager : MonoBehaviour
     {
         width = TMMaker.height;
         height = TMMaker.width;
-        terrainMap = TMMaker.terrainMap;
         cityMap = new int[height, width];
         buildingMap = new int[height, width];
     }
 
     public void addBuilding(int type, Vector3Int position)
     {
-        Debug.Log(position);
+        //Debug.Log(position);
         position = new Vector3Int(position.x, position.y);
-        Debug.Log(position);
+        //Debug.Log(position);
+        Vector3 worldPos = buildingTiles.CellToWorld(position);
         if (cityMap[position.x, position.y] != 0)
         {
-            Vector3 BuildPos = buildingTiles.CellToWorld(position);
             switch (type)
             {
                 case (int)BuildingTypes.ironMine:
@@ -82,7 +82,10 @@ public class CityTileManager : MonoBehaviour
         else if(cityMap[position.x, position.y] == 0 && type == (int)BuildingTypes.cityCenter)
         {
             buildingMap[position.x, position.y] = (int)BuildingTypes.cityCenter;
-
+            GameObject newCity = Instantiate(CityCenter, worldPos, transform.rotation, transform);
+            newCity.GetComponent<CityCenter>().cityTileManager = GetComponent<CityTileManager>();
+            newCity.GetComponent<CityCenter>().cityID = currentCityID;
+            newCity.GetComponent<CityCenter>().TMMaker = TMMaker;
             currentCityID += 1;
         }
         translateBuildingMap();
@@ -90,6 +93,7 @@ public class CityTileManager : MonoBehaviour
 
     public void translateBuildingMap()
     {
+        terrainMap = TMMaker.terrainMap;
         for (int y = 0; y < width; y++)
         {
             for (int x = 0; x < height; x++)
@@ -100,15 +104,18 @@ public class CityTileManager : MonoBehaviour
                     case (int)BuildingTypes.cityCenter:
                         buildingTiles.SetTile(new Vector3Int (x, y, 0), cityCenter);
                         break;
+                    
                     case (int)BuildingTypes.ironMine:
                         if (terrainMap[x, y] == (int)Types.grassiron)
                         {
+                            //Debug.Log("2");
                             buildingTiles.SetTile(new Vector3Int(x, y, 0), grassIronMine);
                         }
                         else if(terrainMap[x, y] == (int)Types.desertiron)
                         {
                             buildingTiles.SetTile(new Vector3Int(x, y, 0), desertIronMine);
                         }
+                        
                         break;
                     case (int)BuildingTypes.stoneMine:
                         if (terrainMap[x, y] == (int)Types.grassstone)
@@ -120,6 +127,7 @@ public class CityTileManager : MonoBehaviour
                             buildingTiles.SetTile(new Vector3Int(x, y, 0), desertStoneMine);
                         }
                         break;
+                    
                     case (int)BuildingTypes.farm:
                         buildingTiles.SetTile(new Vector3Int(x, y, 0), farm);
                         break;
@@ -133,6 +141,33 @@ public class CityTileManager : MonoBehaviour
                         buildingTiles.SetTile(new Vector3Int(x, y, 0), publicForum);
                         break;
                 }
+                /*
+                if (coord == (int)BuildingTypes.ironMine)
+                {
+                    Debug.Log("IronMine");
+                    Debug.Log(terrainMap[x, y]);
+                    if (terrainMap[x, y] == (int)Types.grassiron)
+                    {
+                        Debug.Log("IronMine2");
+                        buildingTiles.SetTile(new Vector3Int(x, y, 0), grassIronMine);
+                    }
+                    else if (terrainMap[x, y] == (int)Types.desertiron)
+                    {
+                        buildingTiles.SetTile(new Vector3Int(x, y, 0), desertIronMine);
+                    }
+                }
+                else if(coord == (int)BuildingTypes.stoneMine)
+                {
+                    if (terrainMap[x, y] == (int)Types.grassstone)
+                    {
+                        buildingTiles.SetTile(new Vector3Int(x, y, 0), grassStoneMine);
+                    }
+                    else if (terrainMap[x, y] == (int)Types.desertstone)
+                    {
+                        buildingTiles.SetTile(new Vector3Int(x, y, 0), desertStoneMine);
+                    }
+                }
+                */
             }
         }
     }

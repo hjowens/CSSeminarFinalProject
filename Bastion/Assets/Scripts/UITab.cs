@@ -45,14 +45,15 @@ public class UITab : MonoBehaviour
     }
     public bool CheckMouseOverTab()
     {
-
         if (EventSystem.current.IsPointerOverGameObject())
         {
-            return true;
+            //Debug.Log("false");
+            return false;
         }
         else
         {
-            return false;
+            //Debug.Log("true");
+            return true;
         }
     }
 
