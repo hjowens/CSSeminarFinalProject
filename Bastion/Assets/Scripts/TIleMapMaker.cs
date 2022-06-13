@@ -218,8 +218,13 @@ public class TIleMapMaker : MonoBehaviour
     }
     public void randomResources(int abundance)
     {
+        /*
+        This function distributes random resources (iron and stone) throughout the map based on the abundance value.
+        */
         List<Vector2Int> resourceList = new List<Vector2Int>();
         int resourceLength = 0;
+        // Loops throught the map to determine how many grass, desert and forest tiles there are and adds them to a list.
+        // This is because I only place resources on land tiles that aren't mountains.
         for(int i = 0; i < width; i++)
         {
             for(int j = 0; j < height; j++)
@@ -242,7 +247,9 @@ public class TIleMapMaker : MonoBehaviour
                 }
             }
         }
+        // Determines how many resources I wish to distribute.
         int amountResources = amountResources = (int)(width * height * ((float)abundance / 1000.0));
+        // Loops through list of land tiles and randomly distributes resources.
         for (int i = 0; i < amountResources; i++)
         {
             int stoneIron = Random.Range(0, 2);
@@ -253,6 +260,7 @@ public class TIleMapMaker : MonoBehaviour
             try
             {
                 int Rand = Random.Range(0, resourceLength - 1);
+                // checks if there are other resources nearby before distribution.
                 if (checkforResources(resourceList[Rand].x, resourceList[Rand].y) == false)
                 {
                     if(terrainMap[resourceList[Rand].x, resourceList[Rand].y] == (int)Types.grass || terrainMap[resourceList[Rand].x, resourceList[Rand].y] == (int)Types.forest)
@@ -270,6 +278,9 @@ public class TIleMapMaker : MonoBehaviour
     }
     private bool checkforResources(int xCoord, int yCoord)
     {
+        /*
+        Checks if there are other reosurces within a distance of one tile of a given position.
+        */
         for (int i = 0; i < directions.Length - 1; i++)
         {
             for (int j = (int)Types.grassiron; j <= (int)Types.desertstone; j++)
@@ -292,6 +303,9 @@ public class TIleMapMaker : MonoBehaviour
     // Takes the 2d list generated from the rest of the code and turns it into a tilemap in Unity.
     private void translateMap()
     {
+        /*
+        translates a given 2d array into a tilemap using the given enum and tiles assigned in the unity project.
+        */
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
+    /*
+    A sort of shell class for a building. It just has resource values that the building generates.
+    */
     public int food;
     public int production;
     public int gold;

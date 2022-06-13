@@ -5,6 +5,9 @@ using UnityEngine.Tilemaps;
 
 public class CityCenter : MonoBehaviour
 {
+    /*
+    This class is quite obviously unfinished. 
+    */
     public int Radius = 2;
     public int Population;
     public int Food;
@@ -74,13 +77,17 @@ public class CityCenter : MonoBehaviour
         */
         return allDirections;
     }
-    // supposed to check whether or not there is already a building in that tile spot
+    // supposed to check whether or not there is already a building in that tile spot it's not finished
     public bool checkTileIntersection(Vector2Int loc)
     {
         return false;
     }
     public void updateTiles()
     {
+        /*
+        This is supposed to be called to determine how many of each tile type a city has in its radius.
+        The counted tile types would then be converted to resources generated every turn.
+        */
         GridLayout gridLayout = transform.parent.GetComponentInParent<GridLayout>();
         Vector3Int cellPos = gridLayout.WorldToCell(transform.position);
         int[,] terrainMap = TMMaker.terrainMap;

@@ -43,6 +43,10 @@ public class CityTileManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
+        These assignments for the coords seem wierd but it's because I messed up the original assigments in TMMaker,
+        and I wrote too much code without fixing them, so now I have to roll with it. I'll likely fix it later.
+         */
         width = TMMaker.height;
         height = TMMaker.width;
         cityMap = new int[height, width];
@@ -51,6 +55,10 @@ public class CityTileManager : MonoBehaviour
 
     public void addBuilding(int type, Vector3Int position)
     {
+        /*
+        This function is called when the player presses left click. It converts the vector passed in (mouse position)
+        into cell coords for the tilemap and changes that position on the tilemap into the passed in building.
+        */
         //Debug.Log(position);
         position = new Vector3Int(position.x, position.y);
         //Debug.Log(position);
@@ -79,10 +87,12 @@ public class CityTileManager : MonoBehaviour
                     break;
             }
         }
+        // city centers are special because they are required for other buildings to be placed.
         else if(cityMap[position.x, position.y] == 0 && type == (int)BuildingTypes.cityCenter)
         {
             buildingMap[position.x, position.y] = (int)BuildingTypes.cityCenter;
             GameObject newCity = Instantiate(CityCenter, worldPos, transform.rotation, transform);
+            // assigning essential variables for the citycenter upon creation.
             newCity.GetComponent<CityCenter>().cityTileManager = GetComponent<CityTileManager>();
             newCity.GetComponent<CityCenter>().cityID = currentCityID;
             newCity.GetComponent<CityCenter>().TMMaker = TMMaker;
@@ -93,6 +103,10 @@ public class CityTileManager : MonoBehaviour
 
     public void translateBuildingMap()
     {
+        /*
+        Takes in a 2d array of numbers and translates it into a tilemap given the building enum and the tiles
+        assigned in the unity engine.
+        */
         terrainMap = TMMaker.terrainMap;
         for (int y = 0; y < width; y++)
         {
